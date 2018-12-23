@@ -1,0 +1,235 @@
+*{
+  box-sizing: border-box;
+}
+:root{
+  --base-background: #00001a;
+  --app-color:#ff5c33;
+}
+body,ul,li,a,h2,h3{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family:"helvetica Neue",sans-serif;
+  font-weight: 400;
+  color:white;
+}
+
+button{
+    color:white;
+    text-align: center;
+    font-size: 1.2rem;
+    border-color: rgba(0,0,0,0);
+    border-style: solid;
+    border-radius: 5px;
+}
+
+/*=================================== First screen =============================*/
+.bodyWrapper{
+  position: relative;
+  width:100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1400px;
+  background-color:var(--base-background);
+}
+
+.user{
+  width:100%;
+  min-height:100vh;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.enterYourName{
+  width:100%;
+  height:50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 2rem;
+}
+form.nameForm{
+  width: 100%;
+  height:auto;
+  text-align: center;
+}
+form.nameForm input{
+  width: 50%;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+.termsandcondition{
+  display: flex;flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width:100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  min-height: 150px;
+}
+.startButton{
+  width:100%;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: relative;
+}
+.enterTest{
+  width:40%;
+  line-height: 2;
+  margin: 0 auto;
+  margin-top: 3rem;
+  background-color:#ff5c33;
+}
+
+.termsButton{
+color:black;
+}
+
+/*=================================== First screen ends here=============================*/
+/*=================================== Test Screen starts here=============================*/
+
+.testView{
+  background-color:var(--base-background);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.topNav{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width:100%;
+  height: 10vh;
+  margin-top: 1rem;
+}
+.topName{
+  width:40%;
+  font-size: 2rem;
+  padding-left: 2rem;
+}
+.logout{
+  width:40%;
+  padding-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.logout .logoutButton{
+  font-size: 2rem;
+  background-color: darkred;
+}
+.tabbed{
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0.5rem 0.5rem;
+  /* background: var(--app-color); */
+}
+.tabbed ul{
+  width:100%;
+  margin: 0.5rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  flex-wrap: wrap;
+}
+.tabbed ul li{
+  width:70px;
+  height: 70px;
+  margin: 0.3rem 0.3rem;
+  background-color: var(--app-color);
+  border-radius:50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: poin
+}
+.questions{
+  width:95%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+}
+.quesFrame{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height:450px;
+  margin: 0 auto;
+  width:100%;
+  background-color: rgba(255,255,255,0.1);
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.quesFrame p{
+  width:100%;
+  height:100px;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.quesFrame button{
+  width:100%;line-height: 2;
+  background-color: darkgreen;
+}
+.quesFrame button.reveal{
+  background-color: lightgray;
+  width:30%;
+  line-height: 1;
+  color:rgba(0,0,0,0.5);
+  text-align: center;
+}
+.answer{
+  width:100%;
+  height:50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.answer label{
+  width:40%;
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  height: 100%;
+  font-size: 1.5rem;
+}
+ .answer label input{
+  width:30px;
+  height:30px;
+}
+
+.answer label input[type='text']{
+ width:200px;
+  font-size: 1.3rem;
+  margin-left: 0.5rem;
+}
+
+/*=================================== Test Screen ends here=============================*/

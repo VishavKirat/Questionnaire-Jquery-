@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/core.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>HTML Knowledge Test</title>
+</head>
+<body style="background-color:rgba(0,0,0,0.05)">
+  <div class='bodyWrapper'>
+    <section class='user'>
+      <div class='enterYourName'>
+        <h2 style='font-size:4rem;color: #ff5c33;text-align:center'>HTML Knowledge Test</h2>
+        <p style='font-size:1.5rem; margin-top:3rem;text-align:center'>Please enter your name in order to enter the questionnaire</p>
+        <form class='nameForm'>
+          <label for="name" style='font-size:1.5rem;text-align:center'>Name:</label>
+          <input type="text" name='nameField' value='' placeholder='Enter your name here'>
+        </form>
+      </div>
+      <div class='termsandcondition'>
+        <button class='termsButton'>Terms and condition</button>
+        <p class='terms'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class='startButton'>
+      <button class='enterTest'>Start </button>
+      </div>
+    </section>
+    <section class='testView'>
+      <div class='topNav'>
+        <h3 class='topName'>Name</h3>
+        <div class='total'>
+          Score: <span class='totalHere'>0</span>
+        </div>
+        <div class='logout'>
+          <button class='logoutButton'>Logout</button>
+        </div>
+      </div>
+
+      <div class='tabbed'>
+        <ul>
+          <li class="one active" data-ques='one' >1</li>
+          <li class="two " data-ques='two'>2</li>
+          <li class="three" data-ques='three'>3</li>
+          <li class="four" data-ques='four'>4</li>
+          <li class="five" data-ques='five'>5</li>
+          <li class="six" data-ques='six'>6</li>
+        </ul>
+      </div>
+      <div class='questions'>
+        <div class='quesOne quesFrame active' data-ques='one'>
+            <button class='reveal'>Reveal Answer</button>
+            <section class='answerDetail'>
+              Correct Answer : True <br>
+              Explanation: For &lt;picture&gt; tag we need media queries as to make the contenet responsive.
+            </section>
+            <p>Do &lt;picture&gt; tag needs media queries? </p>
+              <form class='answer'>
+                <label>
+                <input type="radio" name="quesOne" value="true" > True
+                </label>
+                <label>
+                <input type="radio" name="quesOne" value="false" > False
+                </label>
+              </form>
+            <button class='submit' data-answer='true'>Submit</button>
+        </div>
+        <div class='quesTwo quesFrame ' data-ques='two'>
+          <button class='reveal'>Reveal Answer</button>
+          <section class='answerDetail'>
+            Correct Answer : True <br>
+            Explanation: For &lt;picture&gt; tag we need media queries as to make the contenet responsive.
+          </section>
+          <p>HTML stands for?(donot enter any space)</p>
+            <form class='answer'>
+              <label>
+              Fill in the Blanks: <input type="text" name="quesTwo" value=""  style='text-transform:uppercase;'>
+              </label>
+            </form>
+          <button class='submit' data-answer='HYPERTEXTMARKUPLANGUAGE'>Submit</button>
+        </div>
+
+        <div class='quesThree quesFrame ' data-ques='three'>
+          <button class='reveal'>Reveal Answer</button>
+          <section class='answerDetail'>
+            Correct Answer : True <br>
+            Explanation: For &lt;picture&gt; tag we need media queries as to make the contenet responsive.
+          </section>
+          <p>Which of there are not the HTML Tags?</p>
+            <form class='answer'>
+              <label>
+              <input type="checkbox" name="quesThree" value="DOCTYPE" > &lt;!DOCTYPE html&gt;
+              </label>
+              <label>
+              <input type="checkbox" name="quesThree" value="movie" > &lt;div&gt;
+              </label>
+              <label>
+              <input type="checkbox" name="quesThree" value="neck" > &lt;neck&gt;
+              </label>
+              <label>
+              <input type="checkbox" name="quesThree" value="body" > &lt;body&gt;
+              </label>
+            </form>
+          <button class='submit' data-answer='neck'>Submit</button>
+        </div>
+        <div class='quesFour quesFrame' data-ques='four'>
+          <button class='reveal'>Reveal Answer</button>
+          <section class='answerDetail'>
+            Correct Answer : True <br>
+            Explanation: For &lt;picture&gt; tag we need media queries as to make the contenet responsive.
+          </section>
+          <p>A head section is visible to a person viewing the Web page.</p>
+            <form class='answer'>
+              <label>
+              <input type="radio" name="quesFour" value="true" > True
+              </label>
+              <label>
+              <input type="radio" name="quesFour" value="false" > False
+              </label>
+            </form>
+          <button class='submit' data-answer='false'>Submit</button>
+        </div>
+        <div class='quesFive quesFrame ' data-ques='five'>
+          <button class='reveal'>Reveal Answer</button>
+          <section class='answerDetail'>
+            Correct Answer : True <br>
+            Explanation: For &lt;picture&gt; tag we need media queries as to make the contenet responsive.
+          </section>
+          <p>What is the latest version of HTML?</p>
+            <form class='answer'>
+              <label>
+              Fill in the Blanks: <input type="text" name="quesFive" value=""  style='text-transform:uppercase;'>
+              </label>
+            </form>
+          <button class='submit' data-answer='5'>Submit</button>
+        </div>
+        <div class='quesSix quesFrame' data-ques='six'>
+          <button class='reveal'>Reveal Answer</button>
+          <section class='answerDetail'>
+            Correct Answer : True <br>
+            Explanation: For &lt;picture&gt; tag we need media queries as to make the contenet responsive.
+          </section>
+          <p>Which of there is a table header cell tag?</p>
+            <form class='answer'>
+              <label>
+              <input type="checkbox" name="quesSix" value="table" > &lt;table&gt;
+              </label>
+              <label>
+              <input type="checkbox" name="quesSix" value="row" > &lt;tr&gt;
+              </label>
+              <label>
+              <input type="checkbox" name="quesSix" value="column" > &lt;td&gt;
+              </label>
+              <label>
+              <input type="checkbox" name="quesSix" value="header" > &lt;th&gt;
+              </label>
+            </form>
+          <button class='submit' data-answer='header'>Submit</button>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <script src='app.js'></script>
+</body>
+</html>
